@@ -72,7 +72,6 @@ for i in file_content:
         elif i[0]=='/.':
             pre_data[day,:,:]=np.nan
         else:
-
             temp=pre_data_trans(i[0])
             pre_data[day,hour,:len(temp)]=temp
         day+=1
